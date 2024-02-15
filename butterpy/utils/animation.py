@@ -59,7 +59,7 @@ def ortho_animation(surface, time, window_size=50, fig_kw=None, **kw):
     fig.subplots_adjust(
         top=0.93, bottom=0.12, left=0.21, right=0.95, hspace=0.05)
     ax1 = fig.add_subplot(gs[0], 
-        projection=ccrs.Orthographic(0, 90 - surface.incl*180/np.pi))
+        projection=ccrs.Orthographic(0, 90 - surface.inclination*180/np.pi))
     ax2 = fig.add_subplot(gs[1])
 
     ax1.set_global()
